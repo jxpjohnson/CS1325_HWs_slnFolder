@@ -61,9 +61,9 @@ void fill_entries(char input)
 	char hex[3];												//this variable store the hex value of the number as a string
 	char bin[10];												//this variable store the binary value of the number as a string
 
-	sprintf(hex, "%X", (int)input);
-	convert_hex_to_binary(hex, bin);
-	print_formatted(bin, input);
+	sprintf(hex, "%X", (int)input);						//uses sprintf to print the number into hexadecimal into a string
+	convert_hex_to_binary(hex, bin);						//call a function to convert hex to bin
+	print_formatted(bin, input);							//print all of the result by calling the function
 	
 }//end of functin fill_entries
 
